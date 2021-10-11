@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>aes-rsa-java |  </title>
+    <meta name="description" content=" ">
+    <link rel="shortcut icon" href="/WechatIMG1.png">
+    
+    <link rel="preload" href="/assets/css/styles.88dd2b02.css" as="style"><link rel="preload" href="/assets/js/app.88dd2b02.js" as="script"><link rel="preload" href="/assets/css/4.styles.7697dc17.css" as="style"><link rel="preload" href="/assets/js/4.7697dc17.js" as="script"><link rel="preload" href="/assets/css/0.styles.40367dbe.css" as="style"><link rel="preload" href="/assets/js/0.40367dbe.js" as="script"><link rel="preload" href="/assets/js/31.d3bd4f53.js" as="script"><link rel="prefetch" href="/assets/css/10.styles.c309a477.css"><link rel="prefetch" href="/assets/css/12.styles.ec2f7c4c.css"><link rel="prefetch" href="/assets/css/13.styles.acd233ff.css"><link rel="prefetch" href="/assets/css/15.styles.068973d9.css"><link rel="prefetch" href="/assets/css/16.styles.75a9d63b.css"><link rel="prefetch" href="/assets/css/17.styles.997e85b7.css"><link rel="prefetch" href="/assets/css/18.styles.616954d3.css"><link rel="prefetch" href="/assets/css/19.styles.2a2c898e.css"><link rel="prefetch" href="/assets/css/2.styles.4691f751.css"><link rel="prefetch" href="/assets/css/20.styles.cb7bd78f.css"><link rel="prefetch" href="/assets/css/21.styles.11b38159.css"><link rel="prefetch" href="/assets/css/22.styles.60ad72ea.css"><link rel="prefetch" href="/assets/css/23.styles.9c6e3f19.css"><link rel="prefetch" href="/assets/css/24.styles.ba0b5736.css"><link rel="prefetch" href="/assets/css/5.styles.baeb1f92.css"><link rel="prefetch" href="/assets/css/6.styles.d7c06eed.css"><link rel="prefetch" href="/assets/css/7.styles.811821f7.css"><link rel="prefetch" href="/assets/css/8.styles.be6e98bf.css"><link rel="prefetch" href="/assets/css/9.styles.f5015641.css"><link rel="prefetch" href="/assets/js/10.c309a477.js"><link rel="prefetch" href="/assets/js/11.81a80c43.js"><link rel="prefetch" href="/assets/js/12.ec2f7c4c.js"><link rel="prefetch" href="/assets/js/13.acd233ff.js"><link rel="prefetch" href="/assets/js/14.77f430c4.js"><link rel="prefetch" href="/assets/js/15.068973d9.js"><link rel="prefetch" href="/assets/js/16.75a9d63b.js"><link rel="prefetch" href="/assets/js/17.997e85b7.js"><link rel="prefetch" href="/assets/js/18.616954d3.js"><link rel="prefetch" href="/assets/js/19.2a2c898e.js"><link rel="prefetch" href="/assets/js/20.cb7bd78f.js"><link rel="prefetch" href="/assets/js/21.11b38159.js"><link rel="prefetch" href="/assets/js/22.60ad72ea.js"><link rel="prefetch" href="/assets/js/23.9c6e3f19.js"><link rel="prefetch" href="/assets/js/24.ba0b5736.js"><link rel="prefetch" href="/assets/js/25.cce36918.js"><link rel="prefetch" href="/assets/js/26.eeb9c06b.js"><link rel="prefetch" href="/assets/js/27.0d3f9f17.js"><link rel="prefetch" href="/assets/js/28.e539e587.js"><link rel="prefetch" href="/assets/js/29.349d807c.js"><link rel="prefetch" href="/assets/js/30.1eb1ce5a.js"><link rel="prefetch" href="/assets/js/32.bc243508.js"><link rel="prefetch" href="/assets/js/33.48833d17.js"><link rel="prefetch" href="/assets/js/34.568c332d.js"><link rel="prefetch" href="/assets/js/35.f1b3746d.js"><link rel="prefetch" href="/assets/js/36.07dcef59.js"><link rel="prefetch" href="/assets/js/37.6c98d18b.js"><link rel="prefetch" href="/assets/js/38.1395deb9.js"><link rel="prefetch" href="/assets/js/39.3a3fd6cd.js"><link rel="prefetch" href="/assets/js/40.1c0e6b1f.js"><link rel="prefetch" href="/assets/js/5.baeb1f92.js"><link rel="prefetch" href="/assets/js/6.d7c06eed.js"><link rel="prefetch" href="/assets/js/7.811821f7.js"><link rel="prefetch" href="/assets/js/8.be6e98bf.js"><link rel="prefetch" href="/assets/js/9.f5015641.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.4691f751.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.45d55d38.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.40367dbe.css"><link rel="stylesheet" href="/assets/css/10.styles.c309a477.css"><link rel="stylesheet" href="/assets/css/12.styles.ec2f7c4c.css"><link rel="stylesheet" href="/assets/css/13.styles.acd233ff.css"><link rel="stylesheet" href="/assets/css/15.styles.068973d9.css"><link rel="stylesheet" href="/assets/css/16.styles.75a9d63b.css"><link rel="stylesheet" href="/assets/css/17.styles.997e85b7.css"><link rel="stylesheet" href="/assets/css/18.styles.616954d3.css"><link rel="stylesheet" href="/assets/css/19.styles.2a2c898e.css"><link rel="stylesheet" href="/assets/css/2.styles.4691f751.css"><link rel="stylesheet" href="/assets/css/20.styles.cb7bd78f.css"><link rel="stylesheet" href="/assets/css/21.styles.11b38159.css"><link rel="stylesheet" href="/assets/css/22.styles.60ad72ea.css"><link rel="stylesheet" href="/assets/css/23.styles.9c6e3f19.css"><link rel="stylesheet" href="/assets/css/24.styles.ba0b5736.css"><link rel="stylesheet" href="/assets/css/4.styles.7697dc17.css"><link rel="stylesheet" href="/assets/css/5.styles.baeb1f92.css"><link rel="stylesheet" href="/assets/css/6.styles.d7c06eed.css"><link rel="stylesheet" href="/assets/css/7.styles.811821f7.css"><link rel="stylesheet" href="/assets/css/8.styles.be6e98bf.css"><link rel="stylesheet" href="/assets/css/9.styles.f5015641.css"><link rel="stylesheet" href="/assets/css/styles.88dd2b02.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name"> </span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="https://github.com/Viking1726" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="https://github.com/Viking1726" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/home/home.html" class="sidebar-link">home page</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>JAVA 片段</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/java/aes-rsa-java.html" class="active sidebar-link">aes-rsa-java</a></li><li><a href="/java/java-write-json.html" class="sidebar-link">java输出json到文档</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>HTML 片段</span> <span class="arrow right"></span></p> <!----></div></li><li><a href="/mysql/mysql.html" class="sidebar-link">MYSQL 片段</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>流媒体</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>地图</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content default"><h1 id="aes-rsa-java"><a href="#aes-rsa-java" aria-hidden="true" class="header-anchor">#</a> aes-rsa-java</h1> <div class="tip custom-block"><p class="custom-block-title">TIP</p> <p><a href="https://viking1726.top/attachment/%E5%BD%92%E6%A1%A3.zip" target="_blank" rel="noopener noreferrer">代码和秘钥<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CryptoAndDecrypt</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Value</span><span class="token punctuation">(</span><span class="token string">&quot;${keys.clientPublicKey}&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> String clientPublicKey<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Value</span><span class="token punctuation">(</span><span class="token string">&quot;${keys.clientPrivateKey}&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> String clientPrivateKey<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Value</span><span class="token punctuation">(</span><span class="token string">&quot;${keys.serverPublicKey}&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> String serverPublicKey<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Value</span><span class="token punctuation">(</span><span class="token string">&quot;${keys.serverPrivateKey}&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">private</span> String serverPrivateKey<span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * @param encryptkey
+     * @param postData
+     * @Title: decrypt
+     * @Description: 解密
+     * @author: viking
+     * @date: 2018/11/6 上午10:52
+     * @return: com.alibaba.fastjson.JSONObject
+     * @throw:
+     */</span>
+    <span class="token keyword">public</span> JSONObject <span class="token function">decrypt</span><span class="token punctuation">(</span>String encryptkey<span class="token punctuation">,</span> String postData<span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>
+        <span class="token comment">// 验签</span>
+        <span class="token keyword">boolean</span> passSign <span class="token operator">=</span> EncryUtil<span class="token punctuation">.</span><span class="token function">checkDecryptAndSign</span><span class="token punctuation">(</span>postData<span class="token punctuation">,</span>
+                encryptkey<span class="token punctuation">,</span> clientPublicKey<span class="token punctuation">,</span> serverPrivateKey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>passSign<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 验签通过</span>
+            String aeskey <span class="token operator">=</span> RSA<span class="token punctuation">.</span><span class="token function">decrypt</span><span class="token punctuation">(</span>encryptkey<span class="token punctuation">,</span>
+                    serverPrivateKey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            String data <span class="token operator">=</span> AES<span class="token punctuation">.</span><span class="token function">decryptFromBase64</span><span class="token punctuation">(</span>postData<span class="token punctuation">,</span>
+                    aeskey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            JSONObject jsonObj <span class="token operator">=</span> JSONObject<span class="token punctuation">.</span><span class="token function">parseObject</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> jsonObj<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * @param params
+     * @Title: crypto
+     * @Description: 加密
+     * @author: viking
+     * @date: 2018/11/6 上午11:00
+     * @return: java.lang.String
+     * @throw:
+     */</span>
+    <span class="token keyword">public</span> String <span class="token function">crypto</span><span class="token punctuation">(</span>TreeMap<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> Object<span class="token punctuation">&gt;</span></span> params<span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>
+        <span class="token comment">// 生成RSA签名</span>
+        String sign <span class="token operator">=</span> EncryUtil<span class="token punctuation">.</span><span class="token function">handleRSA</span><span class="token punctuation">(</span>params<span class="token punctuation">,</span> clientPrivateKey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        params<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;sign&quot;</span><span class="token punctuation">,</span> sign<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        String info <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">toJSONString</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//随机生成AES密钥</span>
+        String aesKey <span class="token operator">=</span> RandomUtil<span class="token punctuation">.</span><span class="token function">getRandom</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//AES加密数据</span>
+        String data <span class="token operator">=</span> AES<span class="token punctuation">.</span><span class="token function">encryptToBase64</span><span class="token punctuation">(</span>info<span class="token punctuation">,</span> aesKey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 使用RSA算法将商户自己随机生成的AESkey加密</span>
+        String encryptkey <span class="token operator">=</span> RSA<span class="token punctuation">.</span><span class="token function">encrypt</span><span class="token punctuation">(</span>aesKey<span class="token punctuation">,</span> serverPublicKey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        Map<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> Object<span class="token punctuation">&gt;</span></span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;data&quot;</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;encryptkey&quot;</span><span class="token punctuation">,</span> encryptkey<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> JSON<span class="token punctuation">.</span><span class="token function">toJSONString</span><span class="token punctuation">(</span>map<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">10/12/2019, 7:11:11 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/home/home.html" class="prev">
+        home page
+      </a></span> <span class="next"><a href="/java/java-write-json.html">
+        java输出json到文档
+      </a>
+      →
+    </span></p></div>  <div id="gitalk-container" class="content default"></div></div> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/4.7697dc17.js" defer></script><script src="/assets/js/0.40367dbe.js" defer></script><script src="/assets/js/31.d3bd4f53.js" defer></script><script src="/assets/js/app.88dd2b02.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nginx推流拉流 |  </title>
+    <meta name="description" content=" ">
+    <link rel="shortcut icon" href="/WechatIMG1.png">
+    
+    <link rel="preload" href="/assets/css/styles.88dd2b02.css" as="style"><link rel="preload" href="/assets/js/app.88dd2b02.js" as="script"><link rel="preload" href="/assets/css/4.styles.7697dc17.css" as="style"><link rel="preload" href="/assets/js/4.7697dc17.js" as="script"><link rel="preload" href="/assets/css/0.styles.40367dbe.css" as="style"><link rel="preload" href="/assets/js/0.40367dbe.js" as="script"><link rel="preload" href="/assets/js/37.6c98d18b.js" as="script"><link rel="preload" href="/assets/css/15.styles.068973d9.css" as="style"><link rel="preload" href="/assets/js/15.068973d9.js" as="script"><link rel="preload" href="/assets/css/18.styles.616954d3.css" as="style"><link rel="preload" href="/assets/js/18.616954d3.js" as="script"><link rel="prefetch" href="/assets/css/10.styles.c309a477.css"><link rel="prefetch" href="/assets/css/12.styles.ec2f7c4c.css"><link rel="prefetch" href="/assets/css/13.styles.acd233ff.css"><link rel="prefetch" href="/assets/css/16.styles.75a9d63b.css"><link rel="prefetch" href="/assets/css/17.styles.997e85b7.css"><link rel="prefetch" href="/assets/css/19.styles.2a2c898e.css"><link rel="prefetch" href="/assets/css/2.styles.4691f751.css"><link rel="prefetch" href="/assets/css/20.styles.cb7bd78f.css"><link rel="prefetch" href="/assets/css/21.styles.11b38159.css"><link rel="prefetch" href="/assets/css/22.styles.60ad72ea.css"><link rel="prefetch" href="/assets/css/23.styles.9c6e3f19.css"><link rel="prefetch" href="/assets/css/24.styles.ba0b5736.css"><link rel="prefetch" href="/assets/css/5.styles.baeb1f92.css"><link rel="prefetch" href="/assets/css/6.styles.d7c06eed.css"><link rel="prefetch" href="/assets/css/7.styles.811821f7.css"><link rel="prefetch" href="/assets/css/8.styles.be6e98bf.css"><link rel="prefetch" href="/assets/css/9.styles.f5015641.css"><link rel="prefetch" href="/assets/js/10.c309a477.js"><link rel="prefetch" href="/assets/js/11.81a80c43.js"><link rel="prefetch" href="/assets/js/12.ec2f7c4c.js"><link rel="prefetch" href="/assets/js/13.acd233ff.js"><link rel="prefetch" href="/assets/js/14.77f430c4.js"><link rel="prefetch" href="/assets/js/16.75a9d63b.js"><link rel="prefetch" href="/assets/js/17.997e85b7.js"><link rel="prefetch" href="/assets/js/19.2a2c898e.js"><link rel="prefetch" href="/assets/js/20.cb7bd78f.js"><link rel="prefetch" href="/assets/js/21.11b38159.js"><link rel="prefetch" href="/assets/js/22.60ad72ea.js"><link rel="prefetch" href="/assets/js/23.9c6e3f19.js"><link rel="prefetch" href="/assets/js/24.ba0b5736.js"><link rel="prefetch" href="/assets/js/25.cce36918.js"><link rel="prefetch" href="/assets/js/26.eeb9c06b.js"><link rel="prefetch" href="/assets/js/27.0d3f9f17.js"><link rel="prefetch" href="/assets/js/28.e539e587.js"><link rel="prefetch" href="/assets/js/29.349d807c.js"><link rel="prefetch" href="/assets/js/30.1eb1ce5a.js"><link rel="prefetch" href="/assets/js/31.d3bd4f53.js"><link rel="prefetch" href="/assets/js/32.bc243508.js"><link rel="prefetch" href="/assets/js/33.48833d17.js"><link rel="prefetch" href="/assets/js/34.568c332d.js"><link rel="prefetch" href="/assets/js/35.f1b3746d.js"><link rel="prefetch" href="/assets/js/36.07dcef59.js"><link rel="prefetch" href="/assets/js/38.1395deb9.js"><link rel="prefetch" href="/assets/js/39.3a3fd6cd.js"><link rel="prefetch" href="/assets/js/40.1c0e6b1f.js"><link rel="prefetch" href="/assets/js/5.baeb1f92.js"><link rel="prefetch" href="/assets/js/6.d7c06eed.js"><link rel="prefetch" href="/assets/js/7.811821f7.js"><link rel="prefetch" href="/assets/js/8.be6e98bf.js"><link rel="prefetch" href="/assets/js/9.f5015641.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.4691f751.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.45d55d38.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.40367dbe.css"><link rel="stylesheet" href="/assets/css/10.styles.c309a477.css"><link rel="stylesheet" href="/assets/css/12.styles.ec2f7c4c.css"><link rel="stylesheet" href="/assets/css/13.styles.acd233ff.css"><link rel="stylesheet" href="/assets/css/15.styles.068973d9.css"><link rel="stylesheet" href="/assets/css/16.styles.75a9d63b.css"><link rel="stylesheet" href="/assets/css/17.styles.997e85b7.css"><link rel="stylesheet" href="/assets/css/18.styles.616954d3.css"><link rel="stylesheet" href="/assets/css/19.styles.2a2c898e.css"><link rel="stylesheet" href="/assets/css/2.styles.4691f751.css"><link rel="stylesheet" href="/assets/css/20.styles.cb7bd78f.css"><link rel="stylesheet" href="/assets/css/21.styles.11b38159.css"><link rel="stylesheet" href="/assets/css/22.styles.60ad72ea.css"><link rel="stylesheet" href="/assets/css/23.styles.9c6e3f19.css"><link rel="stylesheet" href="/assets/css/24.styles.ba0b5736.css"><link rel="stylesheet" href="/assets/css/4.styles.7697dc17.css"><link rel="stylesheet" href="/assets/css/5.styles.baeb1f92.css"><link rel="stylesheet" href="/assets/css/6.styles.d7c06eed.css"><link rel="stylesheet" href="/assets/css/7.styles.811821f7.css"><link rel="stylesheet" href="/assets/css/8.styles.be6e98bf.css"><link rel="stylesheet" href="/assets/css/9.styles.f5015641.css"><link rel="stylesheet" href="/assets/css/styles.88dd2b02.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name"> </span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="https://github.com/Viking1726" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="https://github.com/Viking1726" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/home/home.html" class="sidebar-link">home page</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>JAVA 片段</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>HTML 片段</span> <span class="arrow right"></span></p> <!----></div></li><li><a href="/mysql/mysql.html" class="sidebar-link">MYSQL 片段</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>流媒体</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/rtmp/nginx-rtmp.html" class="active sidebar-link">nginx推流拉流</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/rtmp/nginx-rtmp.html#效果演示" class="sidebar-link">效果演示</a></li><li class="sidebar-sub-header"><a href="/rtmp/nginx-rtmp.html#服务器上nginx和rmtp模块安装部分" class="sidebar-link">服务器上nginx和rmtp模块安装部分</a></li><li class="sidebar-sub-header"><a href="/rtmp/nginx-rtmp.html#ffmpeg-部分" class="sidebar-link">ffmpeg 部分</a></li><li class="sidebar-sub-header"><a href="/rtmp/nginx-rtmp.html#nginx-conf-部分" class="sidebar-link">nginx.conf 部分</a></li><li class="sidebar-sub-header"><a href="/rtmp/nginx-rtmp.html#nginx-conf-部分二" class="sidebar-link">nginx.conf 部分二</a></li></ul></li><li><a href="/rtmp/opencv.html" class="sidebar-link">python-opencv-图像处理</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>地图</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content default"><h1 id="nginx-ffmpeg-简单的推拉流-ubuntu-18-04"><a href="#nginx-ffmpeg-简单的推拉流-ubuntu-18-04" aria-hidden="true" class="header-anchor">#</a> nginx ffmpeg 简单的推拉流 ubuntu 18.04</h1> <h2 id="效果演示"><a href="#效果演示" aria-hidden="true" class="header-anchor">#</a> 效果演示</h2> <p><em>电脑端推流 obs</em></p> <video controls="controls" preload="auto" poster="https://viking1726.top/attachment/11-1.png" data-v-8de4ac44><source src="https://viking1726.top/attachment/11.mp4" data-v-8de4ac44></video> <p><em>手机拉流 vlc</em></p> <video controls="controls" preload="auto" poster="https://viking1726.top/attachment/12-1.png" data-v-acbed520><source src="https://viking1726.top/attachment/12.mp4" data-v-acbed520></video> <p><em>手机拉流 浏览器（微信内浏览器）</em></p> <video controls="controls" preload="auto" poster="https://viking1726.top/attachment/14-1.png" data-v-acbed520><source src="https://viking1726.top/attachment/14.mp4" data-v-acbed520></video> <p><em>手机推流</em><br> <a href="http://www.51livetech.com/" target="_blank" rel="noopener noreferrer">易-live 网站连接<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <video controls="controls" preload="auto" poster="https://viking1726.top/attachment/13-1.png" data-v-8de4ac44><source src="https://viking1726.top/attachment/13.mp4" data-v-8de4ac44></video></p> <h2 id="服务器上nginx和rmtp模块安装部分"><a href="#服务器上nginx和rmtp模块安装部分" aria-hidden="true" class="header-anchor">#</a> 服务器上nginx和rmtp模块安装部分</h2> <div class="tip custom-block"><p class="custom-block-title">下载nginx和rtmp模块</p> <p><a href="https://github.com/arut/nginx-rtmp-module" target="_blank" rel="noopener noreferrer">nginx-rtmp-module github主页<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">wget</span> http://nginx.org/download/nginx-1.15.5.tar.gz
+<span class="token function">wget</span> https://github.com/arut/nginx-rtmp-module/archive/master.zip
+</code></pre></div><hr> <div class="tip custom-block"><p class="custom-block-title">zsh</p> <p>zsh extract 插件 解压直接 x  文件名.任意类型</p></div> <p><img src="https://viking1726.top/attachment/6.png" alt="文件截图" title="文件截图"> <img src="https://viking1726.top/attachment/7.png" alt="文件截图" title="文件截图"> <img src="https://viking1726.top/attachment/8.png" alt="文件截图" title="文件截图"></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">apt-get</span> <span class="token function">install</span> build-essential libpcre3 libpcre3-dev libssl-dev //这里可以先不执行,等报错了在安装
+<span class="token function">cd</span> nginx-1.15.5
+./configure --with-http_ssl_module --add-module<span class="token operator">=</span><span class="token punctuation">..</span>/master/nginx-rtmp-module-master
+<span class="token function">make</span>
+<span class="token function">make</span> instasll
+<span class="token function">wget</span> https://raw.github.com/JasonGiedymin/nginx-init-ubuntu/master/nginx -O /etc/init.d/nginx
+<span class="token function">chmod</span> +x /etc/init.d/nginx
+<span class="token function">service</span> nginx start
+</code></pre></div><p><img src="https://viking1726.top/attachment/9.png" alt="文件截图" title="文件截图"></p> <div class="tip custom-block"><p class="custom-block-title">nginx可能默认加入的模块</p> <p>若有报错加入--without-http_gzip_module，或者考虑下载该模块并加入。</p></div> <div class="language-bash extra-class"><pre class="language-bash"><code>./configure --with-http_ssl_module --add-module<span class="token operator">=</span><span class="token punctuation">..</span>/master/nginx-rtmp-module-master --without-http_gzip_module
+</code></pre></div><hr> <p><em>我的nginx启动有点问题 umask解决</em> <img src="https://viking1726.top/attachment/10.png" alt="文件截图" title="文件截图"></p> <h2 id="ffmpeg-部分"><a href="#ffmpeg-部分" aria-hidden="true" class="header-anchor">#</a> ffmpeg 部分</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">apt-get</span> <span class="token function">install</span> ffmpeg
+//我这里直接可以安装 所以没有添加源
+//apt-add-repository ppa:jon-severinsson/ffmpeg
+</code></pre></div><h2 id="nginx-conf-部分"><a href="#nginx-conf-部分" aria-hidden="true" class="header-anchor">#</a> nginx.conf 部分</h2> <div class="warning custom-block"><p class="custom-block-title">记得替换ip</p> <p><em>推流路径 rtmp://your_server_ip:1935/hls</em><br> <em>拉流路径 rtmp://your_server_ip:1935/hls</em></p></div> <div class="language- extra-class"><pre class="language-text"><code>http {
+        ...
+
+    server {
+        listen       80;
+        server_name  localhost;
+
+        ...
+
+}
+rtmp {
+    server {
+        listen 1935;
+        application hls {
+            live on;
+            record off;
+        }
+    }
+}
+
+</code></pre></div><h2 id="nginx-conf-部分二"><a href="#nginx-conf-部分二" aria-hidden="true" class="header-anchor">#</a> nginx.conf 部分二</h2> <div class="warning custom-block"><p class="custom-block-title">记得替换ip</p> <p><em>推流路径 rtmp://YOUR_SERVER_IP:1935/hls</em><br> <em>拉流路径 http://YOUR_SERVER_IP/hls/index.m3u8</em></p></div> <div class="language- extra-class"><pre class="language-text"><code>http {
+        ...
+
+    server {
+        listen       80;
+        server_name  localhost;
+
+        ...
+        
+    location /hls {  
+                types {  
+                    application/vnd.apple.mpegurl m3u8;  
+                    video/mp2t ts;  
+                }  
+                root /tmp;
+                #alias /tmp/hls;    # root 和 alias任选一种。
+                expires -1;         #指定“Expires”的值为当前服务器时间-1s，即永远过期。 
+                Cache-Control no-cache;  
+    }  
+
+
+}
+rtmp {
+    server {
+        listen 1935;
+        application hls {
+            live on;
+            hls on;                  
+            wait_key on;             #对视频切片进行保护，这样就不会产生马赛克了。
+            hls_path /tmp/hls;       #切片存放位置。
+            hls_fragment 10s;        #切片的时长。
+            hls_playlist_length 60s; #总时长。
+            hls_continuous on;       #连续模式。
+            hls_cleanup on;          #切片清理。
+            hls_nested on;           #嵌套模式。
+        }
+    }
+}
+
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">资料来源</p> <p><a href="https://blog.csdn.net/muclenerd/article/details/52291598" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/muclenerd/article/details/52291598<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://blog.csdn.net/kingroc/article/details/50839994" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/kingroc/article/details/50839994<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">10/12/2019, 7:11:11 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mysql/mysql.html" class="prev">
+        MYSQL 片段
+      </a></span> <span class="next"><a href="/rtmp/opencv.html">
+        python-opencv-图像处理
+      </a>
+      →
+    </span></p></div>  <div id="gitalk-container" class="content default"></div></div> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/4.7697dc17.js" defer></script><script src="/assets/js/0.40367dbe.js" defer></script><script src="/assets/js/37.6c98d18b.js" defer></script><script src="/assets/js/15.068973d9.js" defer></script><script src="/assets/js/18.616954d3.js" defer></script><script src="/assets/js/app.88dd2b02.js" defer></script>
+  </body>
+</html>

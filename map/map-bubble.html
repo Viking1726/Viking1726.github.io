@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>地图气泡 |  </title>
+    <meta name="description" content=" ">
+    <link rel="shortcut icon" href="/WechatIMG1.png">
+    
+    <link rel="preload" href="/assets/css/styles.88dd2b02.css" as="style"><link rel="preload" href="/assets/js/app.88dd2b02.js" as="script"><link rel="preload" href="/assets/css/4.styles.7697dc17.css" as="style"><link rel="preload" href="/assets/js/4.7697dc17.js" as="script"><link rel="preload" href="/assets/css/0.styles.40367dbe.css" as="style"><link rel="preload" href="/assets/js/0.40367dbe.js" as="script"><link rel="preload" href="/assets/js/35.f1b3746d.js" as="script"><link rel="preload" href="/assets/css/15.styles.068973d9.css" as="style"><link rel="preload" href="/assets/js/15.068973d9.js" as="script"><link rel="prefetch" href="/assets/css/10.styles.c309a477.css"><link rel="prefetch" href="/assets/css/12.styles.ec2f7c4c.css"><link rel="prefetch" href="/assets/css/13.styles.acd233ff.css"><link rel="prefetch" href="/assets/css/16.styles.75a9d63b.css"><link rel="prefetch" href="/assets/css/17.styles.997e85b7.css"><link rel="prefetch" href="/assets/css/18.styles.616954d3.css"><link rel="prefetch" href="/assets/css/19.styles.2a2c898e.css"><link rel="prefetch" href="/assets/css/2.styles.4691f751.css"><link rel="prefetch" href="/assets/css/20.styles.cb7bd78f.css"><link rel="prefetch" href="/assets/css/21.styles.11b38159.css"><link rel="prefetch" href="/assets/css/22.styles.60ad72ea.css"><link rel="prefetch" href="/assets/css/23.styles.9c6e3f19.css"><link rel="prefetch" href="/assets/css/24.styles.ba0b5736.css"><link rel="prefetch" href="/assets/css/5.styles.baeb1f92.css"><link rel="prefetch" href="/assets/css/6.styles.d7c06eed.css"><link rel="prefetch" href="/assets/css/7.styles.811821f7.css"><link rel="prefetch" href="/assets/css/8.styles.be6e98bf.css"><link rel="prefetch" href="/assets/css/9.styles.f5015641.css"><link rel="prefetch" href="/assets/js/10.c309a477.js"><link rel="prefetch" href="/assets/js/11.81a80c43.js"><link rel="prefetch" href="/assets/js/12.ec2f7c4c.js"><link rel="prefetch" href="/assets/js/13.acd233ff.js"><link rel="prefetch" href="/assets/js/14.77f430c4.js"><link rel="prefetch" href="/assets/js/16.75a9d63b.js"><link rel="prefetch" href="/assets/js/17.997e85b7.js"><link rel="prefetch" href="/assets/js/18.616954d3.js"><link rel="prefetch" href="/assets/js/19.2a2c898e.js"><link rel="prefetch" href="/assets/js/20.cb7bd78f.js"><link rel="prefetch" href="/assets/js/21.11b38159.js"><link rel="prefetch" href="/assets/js/22.60ad72ea.js"><link rel="prefetch" href="/assets/js/23.9c6e3f19.js"><link rel="prefetch" href="/assets/js/24.ba0b5736.js"><link rel="prefetch" href="/assets/js/25.cce36918.js"><link rel="prefetch" href="/assets/js/26.eeb9c06b.js"><link rel="prefetch" href="/assets/js/27.0d3f9f17.js"><link rel="prefetch" href="/assets/js/28.e539e587.js"><link rel="prefetch" href="/assets/js/29.349d807c.js"><link rel="prefetch" href="/assets/js/30.1eb1ce5a.js"><link rel="prefetch" href="/assets/js/31.d3bd4f53.js"><link rel="prefetch" href="/assets/js/32.bc243508.js"><link rel="prefetch" href="/assets/js/33.48833d17.js"><link rel="prefetch" href="/assets/js/34.568c332d.js"><link rel="prefetch" href="/assets/js/36.07dcef59.js"><link rel="prefetch" href="/assets/js/37.6c98d18b.js"><link rel="prefetch" href="/assets/js/38.1395deb9.js"><link rel="prefetch" href="/assets/js/39.3a3fd6cd.js"><link rel="prefetch" href="/assets/js/40.1c0e6b1f.js"><link rel="prefetch" href="/assets/js/5.baeb1f92.js"><link rel="prefetch" href="/assets/js/6.d7c06eed.js"><link rel="prefetch" href="/assets/js/7.811821f7.js"><link rel="prefetch" href="/assets/js/8.be6e98bf.js"><link rel="prefetch" href="/assets/js/9.f5015641.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.4691f751.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.45d55d38.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.40367dbe.css"><link rel="stylesheet" href="/assets/css/10.styles.c309a477.css"><link rel="stylesheet" href="/assets/css/12.styles.ec2f7c4c.css"><link rel="stylesheet" href="/assets/css/13.styles.acd233ff.css"><link rel="stylesheet" href="/assets/css/15.styles.068973d9.css"><link rel="stylesheet" href="/assets/css/16.styles.75a9d63b.css"><link rel="stylesheet" href="/assets/css/17.styles.997e85b7.css"><link rel="stylesheet" href="/assets/css/18.styles.616954d3.css"><link rel="stylesheet" href="/assets/css/19.styles.2a2c898e.css"><link rel="stylesheet" href="/assets/css/2.styles.4691f751.css"><link rel="stylesheet" href="/assets/css/20.styles.cb7bd78f.css"><link rel="stylesheet" href="/assets/css/21.styles.11b38159.css"><link rel="stylesheet" href="/assets/css/22.styles.60ad72ea.css"><link rel="stylesheet" href="/assets/css/23.styles.9c6e3f19.css"><link rel="stylesheet" href="/assets/css/24.styles.ba0b5736.css"><link rel="stylesheet" href="/assets/css/4.styles.7697dc17.css"><link rel="stylesheet" href="/assets/css/5.styles.baeb1f92.css"><link rel="stylesheet" href="/assets/css/6.styles.d7c06eed.css"><link rel="stylesheet" href="/assets/css/7.styles.811821f7.css"><link rel="stylesheet" href="/assets/css/8.styles.be6e98bf.css"><link rel="stylesheet" href="/assets/css/9.styles.f5015641.css"><link rel="stylesheet" href="/assets/css/styles.88dd2b02.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name"> </span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="https://github.com/Viking1726" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="https://github.com/Viking1726" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/home/home.html" class="sidebar-link">home page</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>JAVA 片段</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>HTML 片段</span> <span class="arrow right"></span></p> <!----></div></li><li><a href="/mysql/mysql.html" class="sidebar-link">MYSQL 片段</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>流媒体</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>地图</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/map/map-bubble.html" class="active sidebar-link">地图气泡</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/map/map-bubble.html#最终效果" class="sidebar-link">最终效果</a></li><li class="sidebar-sub-header"><a href="/map/map-bubble.html#websocket-消息推送" class="sidebar-link">websocket 消息推送</a></li><li class="sidebar-sub-header"><a href="/map/map-bubble.html#前台部分" class="sidebar-link">前台部分</a></li><li class="sidebar-sub-header"><a href="/map/map-bubble.html#nginx-部分" class="sidebar-link">nginx 部分</a></li><li class="sidebar-sub-header"><a href="/map/map-bubble.html#百度地图-地图坐标转换为像素坐标" class="sidebar-link">百度地图 地图坐标转换为像素坐标</a></li><li class="sidebar-sub-header"><a href="/map/map-bubble.html#气泡效果" class="sidebar-link">气泡效果</a></li></ul></li><li><a href="/map/estimated-time.html" class="sidebar-link">预估车辆到达时间</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content default"><h1 id="百度地图实时气泡效果-springboot-websocket"><a href="#百度地图实时气泡效果-springboot-websocket" aria-hidden="true" class="header-anchor">#</a> 百度地图实时气泡效果 springboot websocket</h1> <div class="tip custom-block"><p class="custom-block-title">功能描述</p> <p>物联网设备（监控）抓拍到人后，推送给数据处理平台，
+后台通过websocket推送给前端，前端实现气泡效果。
+气泡弹出位置为设备的真实位置。</p></div> <div class="vuepress-flowchart loading"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 30 30" class="vuepress-flowchart-loading-icon" style="enable-background:new 0 0 50 50;"><rect x="0" y="13" width="4" height="5"><animate attributeName="height" attributeType="XML" values="5;21;5" begin="0s" dur="0.6s" repeatCount="indefinite"></animate> <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0s" dur="0.6s" repeatCount="indefinite"></animate></rect> <rect x="10" y="13" width="4" height="5"><animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate> <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate></rect> <rect x="20" y="13" width="4" height="5"><animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate> <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate></rect></svg></div><hr> <h2 id="最终效果"><a href="#最终效果" aria-hidden="true" class="header-anchor">#</a> 最终效果</h2> <video controls="controls" preload="auto" poster="https://viking1726.top/attachment/5.png" data-v-8de4ac44><source src="https://viking1726.top/attachment/4.mp4" data-v-8de4ac44></video> <h2 id="websocket-消息推送"><a href="#websocket-消息推送" aria-hidden="true" class="header-anchor">#</a> websocket 消息推送</h2> <h3 id="pom-xml"><a href="#pom-xml" aria-hidden="true" class="header-anchor">#</a> pom.xml</h3> <div class="language-xml extra-class"><pre class="language-xml"><code><span class="token comment">&lt;!-- websocket--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.springframework.boot<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>spring-boot-starter-websocket<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><hr> <h3 id="class"><a href="#class" aria-hidden="true" class="header-anchor">#</a> class</h3> <p><img src="https://viking1726.top/attachment/1.png" alt="文件截图" title="文件截图"></p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@Configuration</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">WebSocketConfig</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">//部署到tomcat这里的内容要注释掉</span>
+    <span class="token annotation punctuation">@Bean</span>
+    <span class="token keyword">public</span> ServerEndpointExporter <span class="token function">serverEndpointExporter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ServerEndpointExporter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">//@ServerEndpoint(&quot;/websocket/{user}&quot;)</span>
+<span class="token annotation punctuation">@ServerEndpoint</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">&quot;/websocket&quot;</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">WebSocketServer</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Logger logger <span class="token operator">=</span> LoggerFactory<span class="token punctuation">.</span><span class="token function">getLogger</span><span class="token punctuation">(</span>WebSocketServer<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//静态变量，用来记录当前在线连接数。应该把它设计成线程安全的。</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">int</span> onlineCount <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token comment">//concurrent包的线程安全Set，用来存放每个客户端对应的MyWebSocket对象。</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> CopyOnWriteArraySet<span class="token generics function"><span class="token punctuation">&lt;</span>WebSocketServer<span class="token punctuation">&gt;</span></span> webSocketSet <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">CopyOnWriteArraySet</span><span class="token generics function"><span class="token punctuation">&lt;</span>WebSocketServer<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//与某个客户端的连接会话，需要通过它来给客户端发送数据</span>
+    <span class="token keyword">private</span> Session session<span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 连接建立成功调用的方法
+     */</span>
+    <span class="token annotation punctuation">@OnOpen</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onOpen</span><span class="token punctuation">(</span>Session session<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>session <span class="token operator">=</span> session<span class="token punctuation">;</span>
+        webSocketSet<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment">//加入set中</span>
+        <span class="token function">addOnlineCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>           <span class="token comment">//在线数加1</span>
+        logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">&quot;有新连接加入！当前在线人数为&quot;</span> <span class="token operator">+</span> <span class="token function">getOnlineCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            Map<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> Object<span class="token punctuation">&gt;</span></span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;flag&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;连接成功&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">sendMessage</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">toJSONString</span><span class="token punctuation">(</span>map<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            logger<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">&quot;websocket IO异常&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//	//连接打开时执行</span>
+    <span class="token comment">//	@OnOpen</span>
+    <span class="token comment">//	public void onOpen(@PathParam(&quot;user&quot;) String user, Session session) {</span>
+    <span class="token comment">//		currentUser = user;</span>
+    <span class="token comment">//		System.out.println(&quot;Connected ... &quot; + session.getId());</span>
+    <span class="token comment">//	}</span>
+
+    <span class="token comment">/**
+     * 连接关闭调用的方法
+     */</span>
+    <span class="token annotation punctuation">@OnClose</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onClose</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        webSocketSet<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//从set中删除</span>
+        <span class="token function">subOnlineCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>           <span class="token comment">//在线数减1</span>
+        logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">&quot;有一连接关闭！当前在线人数为&quot;</span> <span class="token operator">+</span> <span class="token function">getOnlineCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 收到客户端消息后调用的方法
+     *
+     * @param message 客户端发送过来的消息
+     */</span>
+    <span class="token annotation punctuation">@OnMessage</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onMessage</span><span class="token punctuation">(</span>String message<span class="token punctuation">,</span> Session session<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">&quot;来自客户端的消息:&quot;</span> <span class="token operator">+</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">//群发消息</span>
+        <span class="token comment">//for (WebSocketServer item : webSocketSet) {</span>
+        <span class="token comment">//    try {</span>
+        <span class="token comment">//        item.sendMessage(message);</span>
+        <span class="token comment">//    } catch (IOException e) {</span>
+        <span class="token comment">//        e.printStackTrace();</span>
+        <span class="token comment">//    }</span>
+        <span class="token comment">//}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * @param session
+     * @param error
+     */</span>
+    <span class="token annotation punctuation">@OnError</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span>Session session<span class="token punctuation">,</span> Throwable error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        logger<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">&quot;发生错误&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        error<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">sendMessage</span><span class="token punctuation">(</span>String message<span class="token punctuation">)</span> <span class="token keyword">throws</span> IOException <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>session<span class="token punctuation">.</span><span class="token function">getBasicRemote</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">sendText</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token comment">/**
+     * 群发自定义消息
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">sendInfo</span><span class="token punctuation">(</span>String message<span class="token punctuation">)</span> <span class="token keyword">throws</span> IOException <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>WebSocketServer item <span class="token operator">:</span> webSocketSet<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                item<span class="token punctuation">.</span><span class="token function">sendMessage</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">synchronized</span> <span class="token keyword">int</span> <span class="token function">getOnlineCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> onlineCount<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">synchronized</span> <span class="token keyword">void</span> <span class="token function">addOnlineCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        WebSocketServer<span class="token punctuation">.</span>onlineCount<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">synchronized</span> <span class="token keyword">void</span> <span class="token function">subOnlineCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        WebSocketServer<span class="token punctuation">.</span>onlineCount<span class="token operator">--</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <h3 id="业务中应用"><a href="#业务中应用" aria-hidden="true" class="header-anchor">#</a> 业务中应用</h3> <div class="language-java extra-class"><pre class="language-java"><code>Map<span class="token generics function"><span class="token punctuation">&lt;</span>String<span class="token punctuation">,</span> Object<span class="token punctuation">&gt;</span></span> map1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+map1<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;location&quot;</span><span class="token punctuation">,</span> location<span class="token punctuation">)</span><span class="token punctuation">;</span>
+map1<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;flag&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;HK020&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+map1<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;image&quot;</span><span class="token punctuation">,</span> image<span class="token punctuation">)</span><span class="token punctuation">;</span>
+webSocketServer<span class="token punctuation">.</span><span class="token function">sendInfo</span><span class="token punctuation">(</span>JSON<span class="token punctuation">.</span><span class="token function">toJSONString</span><span class="token punctuation">(</span>map1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><hr> <h2 id="前台部分"><a href="#前台部分" aria-hidden="true" class="header-anchor">#</a> 前台部分</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> socket<span class="token punctuation">;</span>
+<span class="token keyword">var</span> self <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span><span class="token punctuation">(</span>WebSocket<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">&quot;undefined&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;您的浏览器不支持WebSocket&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    socket <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">WebSocket</span><span class="token punctuation">(</span><span class="token string">&quot;ws://localhost:8090/websocket&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    socket<span class="token punctuation">.</span><span class="token function-variable function">onopen</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Socket 已打开&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// socket.send(&quot;这是来自客户端的消息&quot; + location.href + new Date());</span>
+        window<span class="token punctuation">.</span><span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//每隔50秒钟发送一次心跳，避免websocket连接因超时而自动断开</span>
+            <span class="token keyword">var</span> ping <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;time&quot;</span><span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+            socket<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>ping<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token comment">// 获得消息事件</span>
+    socket<span class="token punctuation">.</span><span class="token function-variable function">onmessage</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// console.log(msg);</span>
+        <span class="token keyword">var</span> point <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>point<span class="token punctuation">.</span>flag <span class="token operator">==</span> <span class="token string">&quot;HK020&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            self<span class="token punctuation">.</span><span class="token function">mapBubbleUp</span><span class="token punctuation">(</span>point<span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token comment">//我的业务处理         </span>
+            self<span class="token punctuation">.</span><span class="token function">loadMore</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>personType<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//我的业务处理 </span>
+            self<span class="token punctuation">.</span><span class="token function">inAndOutCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>          <span class="token comment">//我的业务处理</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">//发现消息进入    调后台获取</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token comment">//关闭事件</span>
+    socket<span class="token punctuation">.</span><span class="token function-variable function">onclose</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Socket已关闭&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Socket 尝试重新连接&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        window<span class="token punctuation">.</span><span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">var</span> ping <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;time&quot;</span><span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+            socket <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">WebSocket</span><span class="token punctuation">(</span><span class="token string">&quot;ws://localhost:8090/websocket&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token comment">//发生了错误事件</span>
+    socket<span class="token punctuation">.</span><span class="token function-variable function">onerror</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&quot;Socket发生了错误&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token function">$</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">unload</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        socket<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <h2 id="nginx-部分"><a href="#nginx-部分" aria-hidden="true" class="header-anchor">#</a> nginx 部分</h2> <div class="language- extra-class"><pre class="language-text"><code>http {
+    map $http_upgrade $connection_upgrade {
+        default upgrade;
+        ''      close;
+    }
+    
+    upstream socket {
+          server 127.0.0.1:8081;
+        }
+    
+    server {
+        ...
+
+        location /websocket/ {
+            proxy_pass http://socket;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection $connection_upgrade;
+        }
+    }
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p><a href="http://nginx.org/en/docs/http/websocket.html" target="_blank" rel="noopener noreferrer">nginx websocket配置官方文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <hr> <h2 id="百度地图-地图坐标转换为像素坐标"><a href="#百度地图-地图坐标转换为像素坐标" aria-hidden="true" class="header-anchor">#</a> 百度地图 地图坐标转换为像素坐标</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> position <span class="token operator">=</span> val<span class="token punctuation">.</span>location<span class="token punctuation">;</span>
+<span class="token keyword">var</span> image <span class="token operator">=</span> val<span class="token punctuation">.</span>image<span class="token punctuation">;</span>
+<span class="token keyword">var</span> point <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BMap<span class="token punctuation">.</span>Point</span><span class="token punctuation">(</span>position<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> position<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> e <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">pointToPixel</span><span class="token punctuation">(</span>point<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://viking1726.top/attachment/2.png" alt="文件截图" title="文件截图"></p> <div class="tip custom-block"><p class="custom-block-title">TIP</p> <p><a href="http://lbsyun.baidu.com/cms/jsapi/reference/jsapi_reference.html#a3b2" target="_blank" rel="noopener noreferrer">百度地图JSAPI 2.0类参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <hr> <h2 id="气泡效果"><a href="#气泡效果" aria-hidden="true" class="header-anchor">#</a> 气泡效果</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> position <span class="token operator">=</span> val<span class="token punctuation">.</span>location<span class="token punctuation">;</span>
+<span class="token keyword">var</span> image <span class="token operator">=</span> val<span class="token punctuation">.</span>image<span class="token punctuation">;</span>
+<span class="token keyword">var</span> point <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BMap<span class="token punctuation">.</span>Point</span><span class="token punctuation">(</span>position<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> position<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> e <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">pointToPixel</span><span class="token punctuation">(</span>point<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> click_cnt <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> $body <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;map&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> $elem <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+$elem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>color <span class="token operator">=</span> <span class="token string">&quot;#E94F06&quot;</span><span class="token punctuation">;</span>
+$elem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>zIndex <span class="token operator">=</span> <span class="token number">9999</span><span class="token punctuation">;</span>
+$elem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>position <span class="token operator">=</span> <span class="token string">&quot;absolute&quot;</span><span class="token punctuation">;</span>
+$elem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>select <span class="token operator">=</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> x <span class="token operator">=</span> e<span class="token punctuation">.</span>x<span class="token punctuation">;</span>
+<span class="token keyword">var</span> y <span class="token operator">=</span> e<span class="token punctuation">.</span>y<span class="token punctuation">;</span>
+$elem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token punctuation">(</span>x <span class="token operator">-</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">;</span>
+$elem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token punctuation">(</span>y <span class="token operator">-</span> <span class="token number">20</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">;</span>
+<span class="token function">clearInterval</span><span class="token punctuation">(</span>anim<span class="token punctuation">)</span><span class="token punctuation">;</span>
+$elem<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">&quot;&lt;div class='sqImg'&gt;&lt;img src=&quot;</span> <span class="token operator">+</span> image <span class="token operator">+</span> <span class="token string">&quot;&gt;&lt;/div&gt;&quot;</span><span class="token punctuation">;</span>
+$elem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>fontSize <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">30</span> <span class="token operator">+</span> <span class="token number">8</span> <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> increase <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> anim<span class="token punctuation">;</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    anim <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">++</span>increase <span class="token operator">==</span> <span class="token number">150</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">clearInterval</span><span class="token punctuation">(</span>anim<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            $body<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>$elem<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        $elem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> y <span class="token operator">-</span> <span class="token number">20</span> <span class="token operator">-</span> increase <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">;</span>
+        $elem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>opacity <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">150</span> <span class="token operator">-</span> increase<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">120</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">70</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+$body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>$elem<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.sqImg</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 3px solid #0a9ab4<span class="token punctuation">;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.sqImg::after</span> <span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+    <span class="token property">border-top</span><span class="token punctuation">:</span> 6px solid #0a9ab4<span class="token punctuation">;</span>
+    <span class="token property">border-bottom</span><span class="token punctuation">:</span> 0 none<span class="token punctuation">;</span>
+    <span class="token property">border-left</span><span class="token punctuation">:</span> 6px solid transparent<span class="token punctuation">;</span>
+    <span class="token property">border-right</span><span class="token punctuation">:</span> 6px solid transparent<span class="token punctuation">;</span>
+    <span class="token property">_color</span><span class="token punctuation">:</span> #0a9ab4<span class="token punctuation">;</span>
+    <span class="token property">_filter</span><span class="token punctuation">:</span> <span class="token function">chroma</span><span class="token punctuation">(</span>color=#0a9ab4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> -3px<span class="token punctuation">;</span>
+    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 13px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.sqImg img</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">max-height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">代码来源：</p> <p><a href="https://github.com/djzhao627/JSClickBubble" target="_blank" rel="noopener noreferrer">https://github.com/djzhao627/JSClickBubble<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">10/12/2019, 7:11:11 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/rtmp/opencv.html" class="prev">
+        python-opencv-图像处理
+      </a></span> <span class="next"><a href="/map/estimated-time.html">
+        预估车辆到达时间
+      </a>
+      →
+    </span></p></div>  <div id="gitalk-container" class="content default"></div></div> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/4.7697dc17.js" defer></script><script src="/assets/js/0.40367dbe.js" defer></script><script src="/assets/js/35.f1b3746d.js" defer></script><script src="/assets/js/15.068973d9.js" defer></script><script src="/assets/js/app.88dd2b02.js" defer></script>
+  </body>
+</html>
